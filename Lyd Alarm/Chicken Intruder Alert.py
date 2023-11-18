@@ -22,8 +22,8 @@ stream = p.open(
 )
 
 # Twilio Setup
-account_sid = 'AC768813a1541cf1a15ff60077ba7e5263'
-auth_token = '4e4af0a84985b35fceee7111ad9ac07c'
+account_sid = 'mySID'
+auth_token = 'myAUTH'
 client = Client(account_sid, auth_token)
 
 # Set up counter and time, and sleepPeriod (How long the alarm will wait before reactivating)
