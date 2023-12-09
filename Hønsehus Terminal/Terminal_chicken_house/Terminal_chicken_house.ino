@@ -9,8 +9,12 @@
 #include "variables.h"
 #include "mqtt.h"
 
-
-
+/* components used in terminal box:
+1* ESP WROOM 32 microkontroller
+1* LCD: https://www.aliexpress.com/item/32976958134.html?spm=a2g0o.order_list.order_list_main.20.422618022yHxuY
+1* MFRC-522 RFID-reader: http://tiny.cc/kn9hvz   //shortened aliexpress link
+1* KEYPAD: http://tiny.cc/dn9hvz                 //shortened aliexpress link
+*/
 
 
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST);
