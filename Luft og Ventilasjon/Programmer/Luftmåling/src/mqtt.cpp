@@ -7,22 +7,13 @@ const char* espId = "luftKval"; //Identity
 //WiFi uses const char pointers instead of strings as string is default not part of C. Pointer points to array of char, and effectively acts as (c type)string 
 
 
-const char* ssid = "MagnusHotspot"; //Endre til internet ssid
-const char* password = "mqttshit69"; //Endre til internetpassord
+const char* ssid = "ssid"; //WiFi ssid
+const char* password = "password"; //WiFi password
 
 
-/*
-const char* ssid = "Morgan"; //ssid, WiFi name
-const char* password = "70001553"; //WiFi password
-*/
 
-/*
-const char* ssid = "Deco-nett 6"; //ssid, WiFi name
-const char* password = "Jrkephsbek8151"; //WiFi password
-*/
-
-const char* mqtt_server = "178.164.41.198"; //Endre til IP eller DDNS for RPi
-const int mqtt_port = 1883;
+const char* mqtt_server = "178.164.41.198"; //IP adress of MQTT-host
+const int mqtt_port = 1883; //Default MQTT port
 
 //Class instances of libs.
 WiFiClient luftKval; //Creating an instancce of the WiFiClient called luftKval
@@ -61,7 +52,7 @@ void callback(char* topic, byte* payload, unsigned int length){
   Serial.print(topic);
   Serial.print(". Message: ");
 
-  //Storing the payload in a string
+  //Storing the payload in a C-string
   String message = "";
   for (int i = 0; i < length; i++) {
     message += (char)payload[i];
