@@ -1,1 +1,4 @@
-Luftmåling og Varme brukes på hver sin ESP32
+Både programmet for styreenhet og varme/kjøle-batteri er utviklet i VScode med utvidelse-plug-in PLatformIO.
+PlatformIO muliggjør skriving av program til mikrokontrollere, deriblant ESP32. Denne kreves IKKE for Arduino IDE.
+
+Programmene er ment for separate mikrokontrollere, ikke en og samme. Både header-filene og source-filene kreves (naturligvis)
