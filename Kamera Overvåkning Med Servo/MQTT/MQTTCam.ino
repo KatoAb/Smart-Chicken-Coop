@@ -296,7 +296,7 @@ void autoFunction(){
 }
 
 */
-unsigned long capturetimer;
+unsigned long capturetimer = 0;
 
 
   void loop() {
