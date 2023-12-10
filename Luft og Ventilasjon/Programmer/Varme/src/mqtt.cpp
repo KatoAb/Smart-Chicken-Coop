@@ -6,8 +6,8 @@ const char* espId = "heating"; //Identity
 
 //WiFi uses const char pointers instead of strings as string is default not part of C. 
 //Pointer points to array of char, and effectively acts as (c type)string (note to self)
-const char* ssid = "MagnusHotspot";
-const char* password = "mqttshit69";
+const char* ssid = "ssid";
+const char* password = "password";
 
 
 const char* mqtt_server = "178.164.41.198"; //IP or DDNS for RPi
