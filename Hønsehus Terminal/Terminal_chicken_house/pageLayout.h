@@ -27,8 +27,8 @@ switch (caseState) {
   bootTimer = millis();
     tft.fillScreen(ST77XX_BLACK);
     tft.drawBitmap(0, 0, epd_bitmap_chickenpng2, 160, 128, ST77XX_YELLOW);
-  caseState = 1;
-    break;
+    caseState = 1;
+  break;
 
   case 1:
 
@@ -39,13 +39,13 @@ switch (caseState) {
       picTimer = millis();
       caseState = 2;
   }      
-    break;
+  break;
   
   case 2:
   //Serial.println("case 2");
 
   if(millis() - picTimer >= homeTime){
-    //case to switch between the two homescreens
+       //case to switch between the two homescreens
     switch (currentHomeScreen) {
       case 1:
       tft.fillScreen(ST77XX_BLACK);
