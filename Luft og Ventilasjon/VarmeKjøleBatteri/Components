@@ -1,0 +1,6 @@
+-1x ESP-WROOM-32
+-1x Red LED
+-1x Blue LED
+-3x 220ohm resistor (2 for parallell to get 110ohm)
+-1x breadbord
+-Wires in different colors
