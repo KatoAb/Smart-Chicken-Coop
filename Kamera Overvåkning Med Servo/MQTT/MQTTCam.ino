@@ -21,11 +21,11 @@
   bool autoControl;
   */
   
-  DynamicJsonDocument CONFIG(2048);
+  DynamicJsonDocument CONFIG(2048); //make jsondocument with capacity 2048 bytes
 
   // Wi-Fi credential
-  const char* ssid = "kmasim_Guest";
-  const char* password = "hjerkinn01";
+  const char* ssid = "your network ssid";
+  const char* password = "your password";
 
   // MQTT server information
   const char* mqtt_server = "178.164.41.198";
@@ -33,10 +33,8 @@
   // Hostname for the device
   const char* HostName = "choose hostname";
 
-  // Topics for MQTT communication
-  const char* topic_PHOTO = "PHOTO";
-  const char* topic_CONFIG = "config";
-  const char* streaming = "streaming";
+  
+  const char* streaming = "streaming"; //declare this topic/variable globally so it can be used in the take_picture() function
   const char* mqttUser = "admin";
   const char* mqttPassword = "yuiooiuy";
   
@@ -261,7 +259,6 @@ void callback(char* topic, byte* message, unsigned int length) {
   // Set the callback function to handle incoming MQTT messages
   client.setCallback(callback);
   // Make sure to subscribe to the config topic
-  client.subscribe(topic_CONFIG);
 }
 //Uncomment this chunk of code if you want to use servos:
 /*
