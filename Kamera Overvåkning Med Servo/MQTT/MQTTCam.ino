@@ -20,8 +20,9 @@
   Servo servoY;
   bool autoControl;
   */
-  
-  DynamicJsonDocument CONFIG(2048); //make jsondocument with capacity 2048 bytes
+
+  // Declares CONFIG variable with class DynamicJsonDocument and size 2048 bytes
+  DynamicJsonDocument CONFIG(2048); 
 
   // Wi-Fi credential
   const char* ssid = "your network ssid";
