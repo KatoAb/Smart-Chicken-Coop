@@ -1,3 +1,3 @@
-Lyd-Alarm Sensor for å detektere rovdyr eller annen fare i hønsehus.
+Lydsensoralarm brukes for å detektere rovdyr eller annen fare i hønsehus.
 
-Lyd-Alarmen vil varsle på SMS og telefon.
+Lyd-Alarmen måler kontinuerlig volumnivået i hønsehuset og vil varsle på SMS og telefon dersom vedvarende støy oppdages.
