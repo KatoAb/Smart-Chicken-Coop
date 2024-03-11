@@ -1,4 +1,4 @@
-Dette prosjektet er en helhetlig løsning for overvåkning og styring av et smart hønsehus, med formål
+Smart-Honse-Hus er en helhetlig løsning for overvåkning og styring av et hønsehus, med formål
 å sikre hønenes velferd til enhver tid. Løsningen implementerer kjente og muliggjørende teknologier for å danne et omfattende produkt. Dataoverføring til Raspberry Pi og Node-RED skjer
 trådløst via MQTT og WiFi. Lydsensoralarm bruker PyAudio for deteksjon og Twilio for varsling.
 Automatisk mating stilles inn i UI på Node-RED, og viser matingshistorikk. Luftkvalitet måles
